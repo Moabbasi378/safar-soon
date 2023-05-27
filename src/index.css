@@ -1,6 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-  font-family: IranYekan;
+  font-family: "IranYekan";
   font-style: normal;
   font-weight: 400;
   src: url(./assets/fonts/IRANYekanWebRegular.ttf) format("truetype");
+}
+
+body {
+  font-family: "IranYekan", Fallback, sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
 }
